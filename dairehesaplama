@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Daire {
+    public static void main(String[] args){
+        double pi=3.14,r,alan,çevre,a,dilimalan;
+        
+        Scanner input=new Scanner(System.in);
+        
+        System.out.printf("Dairenin yarıçapını giriniz:");
+        r=input.nextDouble();
+        
+        System.out.printf("Daire diliminin açı ölçüsünü giriniz:");
+        a=input.nextDouble();
+        
+        dilimalan=(a*pi*(r*r))/360;
+        çevre=2*pi*r;
+        alan=pi*(r*r);
+        
+        System.out.println("Dairenin çevresi:"+çevre);
+        System.out.println("Dairenin alanı:"+alan);
+        System.out.println("Daire diliminin alanı:"+dilimalan);
+
+    }
+}
